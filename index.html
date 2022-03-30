@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Weather Dashboard</title>
 </head>
 <!-- Top of webpage display -->
+
 <body class="flex-column min-100-vh">
     <header class="hero">
         <h1 class="app-title">
@@ -19,10 +21,9 @@
         </h1>
     </header>
 
-<!-- first container for city search (user input) -->
+    <!-- first container for city search (user input) -->
     <main class="flex-row justify-space-between">
         <div class="col-12 col-md-4">
-
             <div class="card">
                 <h3 class="card-header text-uppercase">Search for a City</h3>
                 <form id="user-form" class="card-body">
@@ -31,14 +32,14 @@
                     <button type="submit" class="btn">Search</button>
                 </form>
             </div>
-<!-- container for recently searched cities -->
+            <!-- container for recently searched cities -->
             <div class="card">
                 <h3 class="card-header text-uppercase">Recently Searched City</h3>
                 <div id="city-button" class="card-body">
                 </div>
             </div>
         </div>
-
+        <!-- section to display current temperature of selected city -->
         <div class="col-12 col-md-8">
             <div>
                 <h2>Current Weather</h2>
@@ -47,22 +48,28 @@
                 <p id="current-wind"></p>
             </div>
             <div>
+                <!-- section to display the 5 day forecast -->
                 <h2 class="subtitle">5-Day Forecast: <span id="repo-search-term"></span></h2>
                 <div id="repos-container" class="list-group"></div>
                 <div class="container">
                     <div class="row">
-                      <div id="daily-mon" class="col-sm">
-                      </div>
-                      <div id="daily-tues" class="col-sm">
-                      </div>
-                      <div id="daily-wed" class="col-sm">
-                      </div>
-                      <div id="daily-thur" class="col-sm">
-                      </div>
-                      <div id="daily-fri" class="col-sm">
-                      </div>
+                        <!-- day 1 of 5 -->
+                        <div id="daily-mon" class="col-sm">
+                        </div>
+                        <!-- day 2 of 5 -->
+                        <div id="daily-tues" class="col-sm">
+                        </div>
+                        <!-- day 3 of 5 -->
+                        <div id="daily-wed" class="col-sm">
+                        </div>
+                        <!-- day 4 of 5 -->
+                        <div id="daily-thur" class="col-sm">
+                        </div>
+                        <!-- day 5 of 5 -->
+                        <div id="daily-fri" class="col-sm">
+                        </div>
                     </div>
-                  </div>
+                </div>
 
             </div>
     </main>
