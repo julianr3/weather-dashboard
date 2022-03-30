@@ -23,7 +23,7 @@ This weather dashboard is embedded in a URL. No installation required.
 
 Once the website is launched, you will be brought to a main menu. Navigate to the search city option and type in desired city. Click on the search button to view results. current weather information will be displayed at the top while the 5 day forecast will be displayed below. Enjoy! 
 
-![Image of website](assets/images/)
+![Image of website](assets/images/weatherdash.jpg)
 
 ## Credits
 
