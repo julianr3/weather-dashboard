@@ -36,7 +36,6 @@ function getWeather(event) {
           var thurTempEl = document.getElementById("daily-thur")
           var friTempEl = document.getElementById("daily-fri")
 
-          
 
           // change some properties of the elements
           currentTempEl.textContent = "Temperature: "+data.current.temp+"*F"
