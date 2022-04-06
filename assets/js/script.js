@@ -2,7 +2,7 @@ function getWeather(event) {
   event.preventDefault()
   // used to get the weather information for selected city
   var cityName = document.getElementById("new-city").value
-  fetch("http://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "&appid=32b827099a291259fd16d985e09fcb8c")
+  fetch("https://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "&appid=32b827099a291259fd16d985e09fcb8c")
     .then(function (response) {
       return response.json()
     })
